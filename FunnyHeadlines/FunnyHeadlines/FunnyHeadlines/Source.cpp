@@ -29,13 +29,13 @@ int main()
 
 
 	float largeNumber;
-	cout << "How much money would yo like to earn every year?" << endl;
+	cout << "How much money would you like to earn every year?" << endl;
 	cin >> largeNumber;
 
 	string color;
 	cout << "Tell us your least favorite color:" << endl;
 	cin >> color;
-
+	cout << "";
 	string amorphousObject;
 	cout << "Which vegetables have the weirdest shapes?" << endl;
 	getline(cin, amorphousObject);
@@ -44,6 +44,54 @@ int main()
 	cout << "Name a famous dead person:" << endl;
 	getline(cin, deadGuy);
 
+	string celebrityActor;
+	cout << "Who is your favorite actor?" << endl;
+	getline(cin, celebrityActor);
+
+	string politician;
+	cout << "Name a current world leader:" << endl;
+	getline(cin, politician);
+
+	string cartoonCharacter;
+	cout << "Who is your favorite cartoon character?" << endl;
+	getline(cin, cartoonCharacter);
+	
+	string weirdGroup;
+	cout << "Name a hobby or a profession you find scary: " << endl;
+	getline(cin, weirdGroup);
+
+	string somethingGross;
+	cout << "Name a food item you detested as a child: " << endl;
+	getline(cin, somethingGross);
+
+	//Finally, let's print out the headlines!
+	cout << endl << endl << endl
+		<< "And now, today's headlines from the C++ News Wire:"
+		<< endl;
+	cout << "------------------------------------"
+		<< endl;
+
+	cout << "ALIENS SHAPED LIKE " << color << " " << amorphousObject
+		<< " INVADE THE EARTH, KIDNAP " << celebrityActor << ", "
+		<< " RESURRECT " << deadGuy << "!" << endl << endl;
+
+	cout << userName
+		<< " RELEASES NEW ALBUM! " << smallNumber
+		<< " COPIES EXPECTED TO BE SOLD!"
+		<< endl << endl;
+
+	cout << politician << " CAUGHT IN A LOVE TRIANGLE WITH "
+		<< cartoonCharacter << " AND SECRET "
+		<< weirdGroup << " CULT LEADER!" << endl << endl;
+
+	cout << " WORLD'S LARGEST BABY BORN - WEIGHS " << largeNumber
+		<< " POUNDS, EATS " << smallNumber << " TONS OF "
+		<< somethingGross << " EVERY DAY!" << endl << endl;
+
+	//And we're done!
+	//I want to make these into functions...TIME TO LEARN.
+	
+	return 0;
 	
 
 }
